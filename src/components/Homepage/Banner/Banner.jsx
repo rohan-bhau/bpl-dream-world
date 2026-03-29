@@ -1,17 +1,15 @@
 import React from 'react';
-import bgImg from "../../assets/bg-shadow.png"
-import heroImg from "../../assets/banner-main.png"
-import gradient1 from "../../assets/gradient1.png"
-import gradient2 from "../../assets/gradient2.png"
+import bgImg from "../../../assets/bg-shadow.png"
+import heroImg from "../../../assets/banner-main.png"
+
 
 const Banner = () => {
     return (
       <div
         style={{ backgroundImage: `url(${bgImg})` }}
-        className=" bg-no-repeat bg-cover bg-[#131313] my-8 rounded-4xl mx-10 text-white flex flex-col justify-center items-center py-16"
+        className=" bg-no-repeat bg-cover bg-[#131313] my-8 rounded-4xl container mx-auto text-white flex flex-col justify-center items-center py-16"
       >
-        <img className='absolute right-10 top-34 md:top-34 lg:top-30 rounded-4xl' src={gradient2} alt="" />
-        <div className="mb-6">
+         <div className="mb-6">
           <img src={heroImg} alt="" />
         </div>
         <div className="space-y-4 text-center">

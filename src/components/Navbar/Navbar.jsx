@@ -4,7 +4,7 @@ import dollar from "../../assets/dollar_1.png";
 
 const Navbar = () => {
   return (
-    <div className="h-fit px-10  flex justify-between items-center bg-base-100 shadow-sm">
+    <div className="container mx-auto  flex justify-between items-center bg-base-100 shadow-sm">
       <div>
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
