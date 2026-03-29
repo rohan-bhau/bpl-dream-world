@@ -1,0 +1,102 @@
+[
+  {
+    "playerName": "Rohit Sharma",
+    "playerCountry": "India",
+    "playerType": "Batsman",
+    "rating": 9.2,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 1450000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Rohit_Sharma_2019.jpg"
+  },
+  {
+    "playerName": "David Warner",
+    "playerCountry": "Australia",
+    "playerType": "Batsman",
+    "rating": 9.0,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm legbreak",
+    "price": 1350000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9b/David_Warner_2019.jpg"
+  },
+  {
+    "playerName": "Joe Root",
+    "playerCountry": "England",
+    "playerType": "Batsman",
+    "rating": 9.1,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 1320000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Joe_Root_2018.jpg"
+  },
+  {
+    "playerName": "Steve Smith",
+    "playerCountry": "Australia",
+    "playerType": "Batsman",
+    "rating": 9.3,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm legbreak",
+    "price": 1420000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Steve_Smith_2019.jpg"
+  },
+  {
+    "playerName": "Hardik Pandya",
+    "playerCountry": "India",
+    "playerType": "All-Rounder",
+    "rating": 8.8,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast-medium",
+    "price": 1250000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Hardik_Pandya_2019.jpg"
+  },
+  {
+    "playerName": "Rashid Khan",
+    "playerCountry": "Afghanistan",
+    "playerType": "Bowler",
+    "rating": 9.4,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm legbreak googly",
+    "price": 1500000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Rashid_Khan_2018.jpg"
+  },
+  {
+    "playerName": "Jasprit Bumrah",
+    "playerCountry": "India",
+    "playerType": "Bowler",
+    "rating": 9.5,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "price": 1480000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Jasprit_Bumrah_2019.jpg"
+  },
+  {
+    "playerName": "Kagiso Rabada",
+    "playerCountry": "South Africa",
+    "playerType": "Bowler",
+    "rating": 9.0,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "price": 1300000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Kagiso_Rabada_2018.jpg"
+  },
+  {
+    "playerName": "Quinton de Kock",
+    "playerCountry": "South Africa",
+    "playerType": "Wicketkeeper-Batsman",
+    "rating": 8.9,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "None",
+    "price": 1200000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/Quinton_de_Kock_2019.jpg"
+  },
+  {
+    "playerName": "Mushfiqur Rahim",
+    "playerCountry": "Bangladesh",
+    "playerType": "Wicketkeeper-Batsman",
+    "rating": 8.7,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "None",
+    "price": 1100000,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Mushfiqur_Rahim_2018.jpg"
+  }
+]
