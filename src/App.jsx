@@ -2,6 +2,7 @@ import React, { Suspense, useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Banner from "./components/Homepage/Banner/Banner";
 import Players from "./components/Homepage/Players/Players";
+import Footer from "./components/Homepage/Footer/Footer";
 
 const fetchPlayers = async () => {
   const res = await fetch("/data.json");
@@ -25,6 +26,8 @@ const App = () => {
           playersPromise={playersPromise}
         ></Players>
       </Suspense>
+
+      <Footer></Footer>
     </div>
   );
 };
