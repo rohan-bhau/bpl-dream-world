@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import userPng from "../../assets/user.png";
 import flagImg from "../../assets/flag.png";
-const Card = ({ playerData, coin, setCoin }) => {
+import { toast } from "react-toastify";
+const Card = ({ playerData, coin, setCoin, selectedPlayers, setSelectedPlayers }) => {
   // console.log(coin);
 
     const [isSelected, setIsSelected] = useState(false);
@@ -23,11 +24,14 @@ const Card = ({ playerData, coin, setCoin }) => {
         if (newCoin >0) {
             setCoin(newCoin)
         } else {
-            alert(`You don't have enough coin to purchase this player`)
+            toast.warn(`You don't have enough coin to purchase this player`);
             return
         }
         setIsSelected(true)
-        alert(`You selected ${playerName} this player`)
+        toast.success(`${playerName} is selected`);
+
+   
+        setSelectedPlayers([...selectedPlayers, playerData])
     }
 
   return (

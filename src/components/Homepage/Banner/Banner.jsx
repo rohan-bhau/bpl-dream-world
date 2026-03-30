@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import bgImg from "../../../assets/bg-shadow.png"
 import heroImg from "../../../assets/banner-main.png"
+import { toast } from 'react-toastify';
 
 
 const Banner = ({setCoin }) => {
@@ -8,7 +9,8 @@ const Banner = ({setCoin }) => {
 
   const handleBtnClicked = () => {
     setBtnClicked(true)
-    alert(`You got 10000000 free credit`)
+        toast.info(`You got 10000000 free credit`);
+    
     setCoin(10000000)
   }
 

@@ -8,6 +8,8 @@ const Players = ({ playersPromise, coin, setCoin }) => {
 
   const [state, setState] = useState("available")
   // console.log(state, "selectedType") ;
+
+  const [selectedPlayers, setSelectedPlayers] = useState([])
   
 
 
@@ -17,7 +19,10 @@ const Players = ({ playersPromise, coin, setCoin }) => {
         {state === "available" ? (
           <h2 className="font-bold text-3xl">Available Players</h2>
         ) : (
-          <h2 className="font-bold text-3xl"> Selected Players</h2>
+          <h2 className="font-bold text-3xl">
+            {" "}
+            Selected Players ({selectedPlayers.length}/{playersData.length})
+          </h2>
         )}
         <div className="flex">
           <button
@@ -30,7 +35,7 @@ const Players = ({ playersPromise, coin, setCoin }) => {
             onClick={() => setState("selected")}
             className={`btn ${state === "selected" ? "bg-[#E7FE29]" : ""} rounded-l-none rounded-r-xl`}
           >
-            Selected
+            Selected ({selectedPlayers.length})
           </button>
         </div>
       </div>
@@ -40,9 +45,16 @@ const Players = ({ playersPromise, coin, setCoin }) => {
           coin={coin}
           setCoin={setCoin}
           playersData={playersData}
+          selectedPlayers={selectedPlayers}
+          setSelectedPlayers={setSelectedPlayers}
         ></AvailablePlayers>
       ) : (
-        <SelectedPlayers></SelectedPlayers>
+        <SelectedPlayers
+          selectedPlayers={selectedPlayers}
+          setSelectedPlayers={setSelectedPlayers}
+          coin={coin}
+          setCoin={setCoin}
+        ></SelectedPlayers>
       )}
     </div>
   );
