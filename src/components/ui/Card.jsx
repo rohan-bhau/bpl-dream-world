@@ -1,8 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import userPng from "../../assets/user.png";
 import flagImg from "../../assets/flag.png";
-const Card = ({ playerData }) => {
-    const [isSelected, setIsSelected] = useState(false)
+const Card = ({ playerData, coin, setCoin }) => {
+  // console.log(coin);
+
+    const [isSelected, setIsSelected] = useState(false);
+    
+    
   const {
     playerName,
     playerCountry,
@@ -12,7 +16,20 @@ const Card = ({ playerData }) => {
     bowlingStyle,
     price,
     rating,
-  } = playerData;
+    } = playerData;
+    
+    const handleClicked = () => {
+        const newCoin = coin - price
+        if (newCoin >0) {
+            setCoin(newCoin)
+        } else {
+            alert(`You don't have enough coin to purchase this player`)
+            return
+        }
+        setIsSelected(true)
+        alert(`You selected ${playerName} this player`)
+    }
+
   return (
     <div className="card bg-base-100  shadow-sm">
       <figure className="m-4 rounded-xl">
@@ -48,9 +65,13 @@ const Card = ({ playerData }) => {
           </div>
           <div className="flex justify-between items-center">
             <h3 className="font-semibold text-lg ">{price}</h3>
-                      <button className="btn" onClick={() => setIsSelected(true)}
-                      disabled={isSelected}
-                      >{isSelected ? "Selected" : "Choose Player"}</button>
+            <button
+              className="btn"
+              onClick={handleClicked}
+              disabled={isSelected}
+            >
+              {isSelected ? "Selected" : "Choose Player"}
+            </button>
           </div>
         </div>
       </div>
@@ -58,4 +79,4 @@ const Card = ({ playerData }) => {
   );
 };
 
-export default Card
+export default Card;
