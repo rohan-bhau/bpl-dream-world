@@ -1,21 +1,41 @@
-import React, { use } from "react";
+import React, { use, useState } from "react";
 import AvailablePlayers from "../AvailablePlayers/AvailablePlayers";
+import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
 
 const Players = ({ playersPromise }) => {
   const playersData = use(playersPromise);
   // console.log(playersData);
 
+  const [state, setState] = useState("available")
+  // console.log(state, "selectedType") ;
+  
+
+
   return (
-    <div>
-      Players: {playersData.length}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto gap-5">
-        {playersData.map((playerData, idx) => (
-          <AvailablePlayers
-            key={idx}
-            playerData={playerData}
-          ></AvailablePlayers>
-        ))}
+    <div className="container mx-auto">
+      <div className="flex justify-between items-center mb-8">
+        {state === "available" ? (
+          <h2 className="font-bold text-3xl">Available Players</h2>
+        ) : (
+          <h2 className="font-bold text-3xl"> Selected Players</h2>
+        )}
+        <div className="flex">
+          <button
+            onClick={() => setState("available")}
+            className={`btn ${state === "available" ? "bg-[#E7FE29]" : ""} rounded-r-none rounded-l-xl`}
+          >
+            Available
+          </button>
+          <button
+            onClick={() => setState("selected")}
+            className={`btn ${state === "selected" ? "bg-[#E7FE29]" : ""} rounded-l-none rounded-r-xl`}
+          >
+            Selected
+          </button>
+        </div>
       </div>
+      
+        {state === "available" ? <AvailablePlayers playersData={playersData}></AvailablePlayers>:<SelectedPlayers></SelectedPlayers>}
     </div>
   );
 };
