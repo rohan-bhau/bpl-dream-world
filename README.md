@@ -1,16 +1,121 @@
-# React + Vite
+# 🏏 BPL Dream World
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![Vite](https://img.shields.io/badge/Vite-Build-purple?logo=vite)
+![Tailwind](https://img.shields.io/badge/TailwindCSS-Style-38B2AC?logo=tailwind-css)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript)
+![Status](https://img.shields.io/badge/Status-Live-success)
+![Deployment](https://img.shields.io/badge/Deployed%20on-Netlify-00C7B7?logo=netlify)
 
-Currently, two official plugins are available:
+A fantasy cricket team builder for **Bangladesh Premier League (BPL)** where users can claim coins, buy players, and build their dream team within budget.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🌐 **Live Site:**
+https://bpl-world-dream.netlify.app
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# 🎮 How It Works
 
-## Expanding the ESLint configuration
+* Initially coin balance is **0**
+* Click **Claim Free Credit** button
+* You receive **10,000,000 coins**
+* Browse available BPL players
+* Each player has price and role
+* Click **Choose Player** to buy player
+* Coin balance decreases automatically
+* Selected players appear in team section
+* Build your dream team within budget
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+# ✨ Features
+
+* Claim free credit system
+* Dynamic coin balance
+* Player selection system
+* Budget management
+* Team building functionality
+* Real-time UI updates
+* Responsive design
+* Component-based architecture
+* Clean card layout
+
+---
+
+# 🧰 Tech Stack
+
+### Frontend
+
+* ⚛️ React JS
+* ⚡ Vite
+* 🎨 Tailwind CSS
+* 🟨 JavaScript (ES6)
+
+### Deployment
+
+* ▲ Netlify
+
+---
+
+# 📂 Project Structure
+
+```
+bpl-dream-world/
+│
+├── public/
+├── src/
+│   ├── Components/
+│   ├── assets/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+└── README.md
+```
+
+---
+
+# ▶️ Run Locally
+
+Clone repo
+
+```
+git clone https://github.com/rohan-bhau/bpl-dream-world.git
+```
+
+Go to folder
+
+```
+cd bpl-dream-world
+```
+
+Install dependencies
+
+```
+npm install
+```
+
+Run project
+
+```
+npm run dev
+```
+
+---
+
+# 🚀 Deployment
+
+This project is deployed on **Netlify**
+
+Live URL:
+https://bpl-world-dream.netlify.app
+
+---
+
+# 👨‍💻 Author
+
+**Rohan**
+GitHub: https://github.com/rohan-bhau
+
+---
+
